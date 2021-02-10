@@ -6,9 +6,8 @@ def save_to_cache(scan_id):
 
 
 def is_cached(scan_id):
-    print(f'{scan_id}')
     try:
-        return cache_twenty_minutes.get(scan_id) is 1
+        return scan_id in cache_twenty_minutes
     except KeyError:
         print(KeyError)
         return False

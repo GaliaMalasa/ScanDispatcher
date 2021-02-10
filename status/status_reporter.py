@@ -16,5 +16,4 @@ class Status:
                 current_status = Utils.convert_scan_status("PENDING")
             else:
                 current_status = Utils.convert_scan_status("NOT_FOUND")
-        print(is_cached(scan_id))
         return current_status
